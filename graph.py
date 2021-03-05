@@ -10,12 +10,26 @@ mau= [845,1060,1228,1393,1590,1860,2130,2320,1500,2800]
 yticks = [400,600,800,1000,1200,1400,1600,1800,2000]
 
 ax = plt.subplot()
+
+#x axis variable , y axis variable, color, line marker
 plt.plot(year,dau,color = "black",marker= "o")
+
+#set title
 plt.title('DAU in millions')
+
+#variable for x axis
 ax.set_xticks(year)
+
+#variable for y axis 
 ax.set_yticks(yticks)
-plt.xlabel('number of users')
+
+#x axis title
+plt.xlabel('year')
+
+#y axis title
 plt.ylabel('DAU')
+
+#select grid
 plt.grid(which='major',axis = 'both')
 
 plt.savefig('Dau.jpg')
